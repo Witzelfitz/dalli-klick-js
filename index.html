@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" manifest="/offline.appcache">
+<html lang="de" manifest="/offline.appcache">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>dalli-klick-js</title>
+    <title>Dalli Klick</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -12,29 +12,29 @@
   <body>
     <div id="container" class="container">
       <div id="header" class="page-header">
-        <h1>dalli-klick-js <small>an image guessing game</small></h1>
+        <h1>Dalli Klick</h1>
       </div>
       <div id="upload_message" class="alert alert-success hidden"></div>
       <div id="jumbotron" class="jumbotron">
         <span id="step-1">
         <div id="holder"></div>
         <p id="status" class="hidden"><small>File API & FileReader API not supported</small></p>
-        <p><span class="label label-primary">Step 1</span> Drag images from your computer on the drop zone above</p>
+        <p><span class="label label-primary">Schritt 1</span> Ziehe alle gewünschten Bilder in das Quadrat</p>
         </span>
         <span id="step-2" class="hidden">
-        <p><span class="label label-primary">Step 2</span> Select the number of parts used to obscure the image and if pixelate should be active</p>
+        <p><span class="label label-primary">Schritt 2</span> Wähle die Anzahl der verdeckenden Plättchen und ob das Bild verpixelt werden soll</p>
         <form role="form" id="settingsform">
           <div class="form-group">
-            <label for="numberOfParts">Number of parts</label>
+            <label for="numberOfParts">Anzahl Plättchen</label>
             <input type="range" class="form-control" id="numberOfParts" min="10" max="100" value="15">
             <output name="numberOfPartsOutput" id="numberOfPartsOutput">15</output>
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox" id="pixelate" value="1"> Use pixelate
+              <input type="checkbox" id="pixelate" value="1"> Verpixeln
             </label>
-          </div>
-          <button type="submit" class="btn btn-success" id="start-button">Start the game</button>
+          </div> 
+          <button type="submit" class="btn btn-success" id="start-button">Spiel starten</button>
         </form>
         </span>
       </div>

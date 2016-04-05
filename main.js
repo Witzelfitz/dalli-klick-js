@@ -11,7 +11,7 @@ var files = [];
 var current_image = 0;
 var random_cells;
 
-var number_of_parts = 15;
+var number_of_parts = 100;
 var pixelate = false;
 var myPixelation;
 var pixelate_resolution;
@@ -38,7 +38,7 @@ holder.ondrop = function(e) {
 
   files = e.dataTransfer.files;
 
-  upload_message.innerHTML = "Selected " + files.length + " files.";
+  upload_message.innerHTML = files.length + " Bilder ausgewählt";
   upload_message.classList.remove('hidden');
   step_1.classList.add('hidden');
   step_2.classList.remove('hidden');
